@@ -1,0 +1,11 @@
+var fs = require ('fs');
+var readStream = fs.createReadStream('/cat.jpg');
+
+readStream('data', function(data){
+	console.log('got data:', data);
+		
+});
+
+readStream.onc('end');
+
+
